@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZplWindow</class>
+ <widget class="QMainWindow" name="ZplWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1284</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ZEBRA - параметры макета</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1266</width>
+      <height>785</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0,1,4,1,1">
+       <item>
+        <widget class="QGroupBox" name="gbDm">
+         <property name="title">
+          <string>Параметры кода DataMatrix  (^BX)</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,1">
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="3,1,0,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>Положение на шаблоне (^FO):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leDMLeft">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="toolTip">
+               <string>Левая граница кода Datamatrix</string>
+              </property>
+              <property name="text">
+               <string>100</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string> : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leDMTop">
+              <property name="toolTip">
+               <string>Верхняя граница кода Datamatrix</string>
+              </property>
+              <property name="text">
+               <string>100</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="3,1,3,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ориентация (град):&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbDMRotate">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="maxVisibleItems">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string extracomment="N">0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="R">90</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="I">180</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="B">270</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Размер ячейки кода: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbDMHeight">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="currentText">
+               <string>6</string>
+              </property>
+              <property name="currentIndex">
+               <number>5</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gbBarCode">
+         <property name="title">
+          <string>Параметры палетного штрих-кода (^BС)</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,1">
+          <property name="leftMargin">
+           <number>4</number>
+          </property>
+          <property name="topMargin">
+           <number>4</number>
+          </property>
+          <property name="rightMargin">
+           <number>4</number>
+          </property>
+          <property name="bottomMargin">
+           <number>4</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_31" stretch="4,1,0,1,2,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_25">
+              <property name="text">
+               <string>Положение на шаблоне (^FO):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leDMLeft_2">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="toolTip">
+               <string>Левая граница кода Datamatrix</string>
+              </property>
+              <property name="text">
+               <string>100</string>
+              </property>
+              <property name="maxLength">
+               <number>4</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string> : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leDMTop_2">
+              <property name="toolTip">
+               <string>Верхняя граница кода Datamatrix</string>
+              </property>
+              <property name="text">
+               <string>100</string>
+              </property>
+              <property name="maxLength">
+               <number>4</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Поворот:  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbCRotate">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string extracomment="N">0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="R">90</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="I">180</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="B">270</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,1,6,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Соотношение линий: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbDMHeight_3">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="currentText">
+               <string>2.0</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>11</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>2.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3.0</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ширина модуля: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbDMHeight_2">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="currentText">
+               <string>2</string>
+              </property>
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gbText">
+         <property name="title">
+          <string>Добавить надпись на коде (^A)</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,1,1,1">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_30" stretch="3,2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>Вид надписи:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbNumeric">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="inputMethodHints">
+               <set>Qt::ImhDigitsOnly</set>
+              </property>
+              <item>
+               <property name="text">
+                <string extracomment="N">Индивидуальный код</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="R">Порядковый номер</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="10,1,0,1">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Положение надписи (^FO...):     </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leTextLeft">
+              <property name="text">
+               <string>120</string>
+              </property>
+              <property name="maxLength">
+               <number>4</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string> : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leTextTop">
+              <property name="text">
+               <string>120</string>
+              </property>
+              <property name="maxLength">
+               <number>4</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="0,0,3,2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Максимальная ширина поля надписи: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="leTextField">
+              <property name="text">
+               <string>236</string>
+              </property>
+              <property name="maxLength">
+               <number>4</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string>   Выравнивание:   </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbTextAlign">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="currentIndex">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string extracomment="N">Left</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="R">Right</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="I">Auto</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="0,1,1,1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_26">
+              <property name="text">
+               <string>Поворот: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbTextRotate">
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <item>
+               <property name="text">
+                <string extracomment="N">0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="R">90</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="I">180</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string extracomment="B">270</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>     Размер шрифта: </string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="sbFontSize">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>48</number>
+              </property>
+              <property name="value">
+               <number>18</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="gbZebraPrinter">
+         <property name="title">
+          <string>Принтер Zebra:</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QComboBox" name="cbPrinter"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnTestPrint">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Пробная печать кода</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="gbGraphics">
+       <property name="title">
+        <string>Фоновое изображение</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0">
+        <property name="leftMargin">
+         <number>4</number>
+        </property>
+        <property name="topMargin">
+         <number>4</number>
+        </property>
+        <property name="rightMargin">
+         <number>4</number>
+        </property>
+        <property name="bottomMargin">
+         <number>4</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29" stretch="4,1,0,1">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Положение изображения на шаблоне (^FO)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="leBackLeft">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string> , </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="leBackTop">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbBackImage">
+          <property name="title">
+           <string>Код фонового изображения  (^GFA ... ^FS):</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>2</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTextEdit" name="pBackImage">
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Код фонового изображения для загрузки в принтер Zebra</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;^GFA,61464,61464,104,,::::::jI01,hR03IFgM03,hR0180CgM03,hS080CgM03,:hS080C79EFE0F007F878E0F79E1E03801F61EF9FEF87F89C1E1FC1E3CF79E1E03807FE3C0F1FE1E138F7D70387F078F3DF78780F,hS080C30C6319804C08C60E30C2308C03310C708C600CBC6330C66318630C230C4030C66118322378C63918C63188C618E30CC118,hS080C30C6330C00C10470C30C4188603318C208C600C186618C66318630C41886010C42308304330C61008861088C61843186218,hS080C31C6330400C1FE71430C419FE02318C608C600C182608C60718630C418FE010C06200307F30463019831181C618431823F8,hS080C32C7E30600C1005043FCC19I06318CA08C7E0C18360CFC1B1FE3FCC1980010C13200304030665071831F06C7F87F1832,hS080C34C6330600C10058430CC198006318F208C630C18260CC62318630CC1980010C6330030403047901983118CC618431832,hS080C30C6130400C1804A430CC198002318C208C630C182608C26318630CC1880010C4330030603046100D8310D8C618431823,hS080C30C61B0400C1C04C430C618C202318C208C630C186608C36318630C618C2010C43380307130C6100CC210D8C61843182388,hR0180C30C6318800C0FC44E30C330FC03310C728C630C1C4310C66718630C330FC030C671F8303F38863818C63198C618C30C41F8,hR03E3F79EFE0F001F078E5F79E1C07801FE1EFB3EFE1F1B81E1FC3B3CF79E1C03807DE330F07C1C370F7CF0387F0E6F3DF78780E,jI03Q018gR03,::jI07CP03EgR07C,,:::::hU01M08U02004R086M08hN08,hR07FF7L038R03C0E01C07F8M0386L013FF8W0F8M07FFEU04,hR04311M08R0C30600C018EM018M022108V0306M03018U02,hS0301M08I01M01018600C0187M018M0401X0603M01018U01,hS0301M08I03M0300C600C0183M018M0C01X0603M01018U018,hS0301381C1E08F187C381380600C60EC01830E071C71860F098080103CF78C78FF0E1E780C018FF1FE01018F3DE3F8IF0E1B808,hS03018C62330842230C67880600C619C01832308CC318E11BC80801018631C8C19318C300C0184608801018618C7308062338C08,hS03010C432109040308630C0600E610C01862190CC3186218C0180101863018418218C300C0184608801018618C030804219860C,hS03010C7F030A060318330C0600E630C01FC7FB00C31863F8801801018E321001860CC300C0184608801018638C81I047F9860C,hS03010CC0090F038318330C0600C630C018040300C318620080180101963C1001860CFF00C0184600801018658F019004401860C,hS03010CC0310900E318330C0700C630C018060300C318620080180101A6361801860CC300C0184600801018698D809004601860C,hS03010C402109806318330C0300C630C018060300C31863008018010186331801860CC30060304610801018618CC0E004601860C,hS03010C612108C0330C230C01818630C018030980C31863I8008010186331C018308C30060304610801018618CC060043098408,hS03038C7E331C66230C630C00C30618E01803F1FC479861F98008018186318FC18318C30030620620803018618C60620E3F18C08,hS0FC7DE1C39BEF1C18387DE003C0F8EC07E01E070723EF0E3E00C07C3CF78E783E0E1E7800F839F7FE07C7EF3DE38431F1E1B818,kI04gL0406Q04K01801,kI02gN02Q08K01802,kI01gY078K01804,mI07L07C08,,::::::gS07801FP01C003EM04g03EI0E3804I04FiG0100E003FC1F0C02,gR018607EP066003EM0Cg07C00306408I070Ci07001003F83E12,gR02030CQ042004N0EgJ06044K0406i0100180408003304,gR060188Q0C3006M016g0CI0C0461J0403i010018I08603308,gR0E0183C7E01C70380C100F83FEI01303FEF30E1FE3C3FEF801FI080462L033C63C7F8B81E3CEFF79EFE3CF0E01C7FBE0079E3CFBCI0F3C70E1FE3C001001K0F8331,gR0C019464C0623830081001C00CJ03I0C65318C24600C6I03801B8I4L0198E460CBCC6318E1930C63186318664C1C0030C4661800119823308C66001002I0101C33,gR0C01D83080433870081I06008I023I0864218C2830086J0C018C640EJ07F980C20C186631901830C63186218420C080030C4221800208802100C4200100FI010061223,gR0C01D830807F2C30081I06008I02180086860CC0830086J0401063899K01990800C182071901831C6318660CC00C080030C0621800200C46I0C0600100380020020C448,gR0C019830F8C02CB0081I02008I07F80087860CC1830087CI06010601198J039E0800C1821B1E01832C7E1FE60CC00C0F803FC3223800200446I0C130010018002003008CC,gR0E0198308CC024B0083I02008I04080086C60CC18300867I04010600118J031B0C00C182231B01834C6318660CC00C08C030C623D800200686I0C63001I08002002008CC,gR06018830864026300C3I02008I080C0086C60CC18300863I04010602118J03198C00C182631901830C6118660CC00C086030CC201800300286I0C43001I08004002010CC,gR03030C2086612330042L08I080C00866308C0C300863I0401860419800406198E00C186631981830C61986308600C086030CC201800380303I0C43001I08004002020CC,gR018606618C7E2230066188441C60180641C66318C06641C63010830CC081918020C18C7E0C1C46718C1830C631863187E0C18C030C46018C01F8103F28C670010310604084I048C,gS0780383F81C727803818F063E603C1FE3EF38E1E03863EFC01E03078I0E1800F03C73C1F1B83B3CE3E79EFE3CF0E03C1F3F8079E7307CC00F0101E31E33007C3C06080F004038C,kK018h02,hQ08gR01g018h02U02,kK018gY03C,kK03CgY018,,::::::gX01FiP0180701CgX07C001C,gX060CiO07808832gX0F8007,gX0C04iO01810C61gX08I0C,gX0CiQ018304418gV01C0018,gW018001E0FF0E0B8679878F3DE787805C3FDE79FE1E1FC1E1FC380078FFDE78B8FF0F00FE00183044180E0F3FC0FFC4E0707FBC779DE7BCF79EJ01F0018007039FE,gW0180023044313IC30C8C618C308C046064C308C230C6330C0C6008C618C33CC983180630018306418060E1180619E318C2318231CC318630CK0380370030708C,gW01800618442198613208C618C3104043060C300C618C6618C2860184618C3186183180630018306C18070C11802184110C03080320C318630CK018031C038700C,gW01800418443F98203001C618C31FE003060C700C418CC608C1830100618C3182180380630018306C180714118021841B06030C4320C318630CL0C030C028300C,gW0180040804601820FC06C7F8CB1J0F060CB00C408FC60CC1830100618CB182180D807E0018304C180504118021841B06030443C0C319632C7CJ0C020402CB00C,gW0180040804601821B60CC618D31J01060D300C408C660CC1830180618D31821811806300183044180584118021841B0603068360C31A634C7CJ040204024300C,gW01800608842018213218C618E318I01060C300C608C6608C1830180618E318218318061001830441804A4118021841B0623028320C31C638CN0304027300C,gX0C006188430986I318C618C31CI03060C300C618C6608C0C201C0618C318618318061801810C61004C411802184118403030330C318630CL08030C027300C,gX0608311043F1C423118C618C30FC046060C328C310C6310C0C600FC618C31C4183380630018088220044E51806186318C43010318C318630CJ03106188022328C2,gX01E01E3FF0E1B8E79CE6F3DE787803C0F9E7B1E1E1FC1E1E0380078F3DE79B83E1D80FE007C0701C00E5F67C0FBC5C070FF81079DFF3CF79EJ01C060F00727B1E2,hI02030018hM018gP04J08082K018,hK010018hM018gP04M02L08,hN018hM018gP0EL03C,hN03ChM03CgO01FL018,,::::::hG03CiP0EI0F8gT01E03C,hG0C38iN019I0F8gT03F042,h03018iN030801gV0638C3,h03008iN020C018gV018C3,h06I0783FC382E19E31E3CF7DE1E0170FF79E7F8787F0787F8F001E3FF79E2E3FC3C03F8020C03E007FC0FFC5C0F07FBC7F99EFBCF79EL018C201C0E7F8,h06I08C118C4F314C72318630C2301181930C230CC318CC3091802318630CF3260C6018C020C007I0180619E619823182728C618630CL0106400C1C23,h0600186118866184C82318610C41010C1830C031863198630A0C06118630C61860C6018C060C003800100618C330C23084200C218630CL0103800E1C03,h0600106118FE6082C80718610C7F800C1831C03182331823020C04018630C608600E018C060C001800100618C1304230C4240C218E31CL0203C00A0C03,h0600102119806083F01B1FE13C4I03C1832C031833F1833060C04018632C608603601F8060CI0800100618C1306230C03C0C219632C07FEJ04600B2C03,h0600102019806086D83318614C4J041834C03183319833060C06018634C6086046018C020CI0800100618C130603068240C21A634CL040C30090C03,h0300182018806086CC6318618C6J041830C03182319823060C06018638C60860C60184020CI0800100618C130403068260C218630CL080C1009CC03,h0300186218C2618IC6318610C7J0C1830C03182319823030C07018630C61860C601860308001I0100618C330443030230C218630CK0104C1009CC03,h01C00C4418FC710CC66318638C3F01181830CA30C4318C43019803F18630C71060CE018C0110C22008380618E21I83030730C218630CK03F8620088CA308,hG07C078FFC386E39E739BCF7DE1E00F03E79EC78787F078780E001E3CF79E6E0F87603F800E0E3C00C7C0F3CDC0F1FF800F9DFF3CF79EK07F83C01C9EC788,hL080C006hN06T02Q0CI010182K018,hL0804006hN06gL0CI010082L08,hQ06hN06gL0CL03C,hQ0FhN0FgK01EL038,,::::::gR03CiI0403807gS07C1CT0C3C0201EK0FFEI018,gQ01C3iH01C044198gR0F87ES0187E0E023K020CJ04,gQ01808iH040C2108gR08047S0108702061K0208J04,gQ0100CiH0408230CgQ01C003S02003020418J0208J02,gT06FBC3C271FE3C7FBCF7BC3C0E3E63C1FC0F3C3C7BEF3C38071FEF801E78FI0418330407039FE03FF3703C1IF1FC6FF1E0C01F00100F33CE3C3FC020030204180F1820867982,gT0671846F18C2468898631846119CA4631806184631C618C6199306I0C3118004183204030708C0186718460886118E98330C003803006518EC6118060020204080638208C30C3,gR01FE21882208C2828818631882218804231806188230861886108306I0C3108004183204038700C018630CC3088611801821J018020064190C601806002020618060020813203,gT06218FF20CC0FF0818E318FF20090061980618FF30861983300306I0C3018004183204028300C018630C83088201901803K0C0200681900E01806004020718064020803001,gT063F88020CC0800819631880600F0320F80618803F87F983300307E00FF0C800418320402CB00C018630C81008321E018098J0C0400781E036018060080201D8078I080FC01,gT0E2188020CC080081A63D88060090620D806188030861983300306300C318800418320C024300C018630C81008121B018318J0408006C1B04601806J02001006C04081B601,gT0C218C020CC0C008186018C020098C21980618C030861983300306300C330800408230C027300C018630CC11081C19818218K01I06C190C601806J020030066040813203,gS018218E0208C0E008186018E03008CC21180618E0308618C2180306300C33080040C6108027300C0186308C31080C19818218J08208066198C601806020020060066I08I303,gR08306187E318C07E0C1860187E3F9CC4631806187E318618C61F8306300C3118004044198022328C0186318622080C18C18338C03107F006618CCE5180207F0200C0063081823102,gR03C0FBC3C2E1E03C3E3CF03C3C0E3E77367C0FF83C7BEF3C380F07CFE01E79CC01F0380E00727B1E03CF3703C7FE083C73E198C01C0FF00F3BCE7663C020FF0F87I0F1IFCE79C2,h02gO04hJ03J040608gN01R03006J04,h02iT03L021gO018Q02002J04,h07iT03M0FgP0CQ02M08,h0F8iS0F8L0E,,::::::hJ07FFEhJ0C0380EhT01FI08,hJ0180ChI03C04419hT01F0038,hJ01808hJ0C086308hS02J08,hJ01808hJ0C18220ChS03J08,hJ01808FBCF7BE1C7F0F03F03EF071E7BCF0F01C7FBE007FI0C18220C07079FE07FE2703C3FDE3BCEFF1E0C078FFEFF071FC1E0FF7C7C07CI0801FE,hJ0180861863184631998660186118C3186118234C1C0031800C18320C030708C030CF1846118C118F11230C03046246118C633046301800EI0800C2,hJ0180821863084331908C6008610CC318620C430C080031800C18360C038608C010C20883018401911021I0100600610CC661846301I03I08004,hJ018082186308FF330186600863FCC318620C400C080031800C18360C038A08C010C20C83018621901003I018860063FIC60846301I03I08004,hJ018082786308803F04C3E0086200FF1FE60CC00C0F803FI0C18260C028208C010C20D83018221E01019J0886006200FC60C463E1I01I08004,hJ018082986308C03198C360086300C318660CC00C08C031800C18220C02C208C010C20D83018341B01031J0D06006300C660C06339I01I08004,hJ018083186308C03190C260086300C318660C400C086030800C18220C025208C010C20D83118141901061J0506006300C660806319I01I08004,hJ018082186308613190C660086184C318630C600C086030C00C086308026208C010C208C3018181981061J0606006184C660886319M08004,hJ0180C71863087E3199CC601861F8C31861987F0C18C031800C044110022728C030C318662180818C18230C002061461F8C6311063398042180800C1,hJ07E3EFBCIF83C7F0CDCF03FE0F1E7BCF0E01C1F3F807F003E0380E0072FB3E07DE2E0387FC083CE7C398C0021F18F0F1FC1E3FF7E7C0781C3E01F1,hT06R01hH02J04041R04R0203N04,hT02hU02M01R04R0201,kP07L01EQ078,kP0F8L0CQ03,,::::::gQ0F8hM0108h0108,gP0306hM0188h0118,gP0602hN0FhH0E,gP06,gP0CI0F01C7F878FE1807F0783FC78I07EF7DC1E1C79EFBDF0F7DE00703C3FC3C1FE003FF3DEF871E7BCF7BEF7DE1F7BE00E0787FC383FC007DEE070F0FF7CI03FC4E070CF9B1E67BE,gP0C00118234C08C63180318CC1188CI0CC630C1C6230C718E0630C0198461186608C0018618C6118C3186318638C0C31C01188C018C611800188706118463J0119E318CE73B8CA31C,gP0C0020C430C08C63I0319861188C0018C630E184330C21840610C010883018C308CI08618C210CC3186318610C0C308021986010860180018070E208463K018C310C02004C8308,gP0C0020C400C01C63I0331821181CI0CC630E287F30C21840610C030083018C108CI08618C23FCC318E318610C0C31802010601183018I0E05863FC463K018C130612404D0318,gP0C0060CC00C06C7EI03F1831186CI07C630A08C03FC3F87C613C030183018C188CI08618C2200FF1963187F0F8C32806010201183118I060596200463EJ018C1B061FC03F0328,gP0C0060CC00C0CC63I031983018CCI06C3B0B08C030C21846614C030183018C180CI08618C2300C31A61D8610IC3C806010201183118I07049620046338I018C130612406D83C8,gP0C0060C400C18C61I0319820198CI04C0309484030C21842618C030183018C100CI08618C2300C3186018610C6C30802018201183018I0904C63004631800118C13063260CD8308,gP060030C600C18C61800319822198CI0CC0309886130C21842610C0180C3018C110CI08618C2184C3186018610C6C308030186010C22180011846638046318I018C3184I20IC308,gP03041987F0C18C63180318C44198C6018C03089C7E30C618C6638C01F8665186220C6018618C21F8C3186018630IC31C03F8C4838C6218C030C4461FA0631980218E218C67318CC31C4,gQ0F00E01C1F0E6FE1807F078FFCE66039E07DCBE1C79EFBDFCF7DE00F03863C3C7FE603EF3IF8F1E7BCF03EF7DF9F7BE00E078C7C38FFCE079EE4F0F39F7E1C07FCDC070CF9F9E77BE4,hS080CgX0406h0C042U040404C,hS0804gX04022gY08gI0C,nG0C,n01F,,::::::K07F1FlK07C3803CR0F00E0700FI01IF8,K01C0ClK07C460C38P01F833088306I0603,L0E08lH010080421018N01031C21108602I0602,L071lI0100C0423008N01I0C61908CK0602,L032027078F3DF79FEF003F801E0F3FC3C707BCF0E3CF7DE1E1C1E07FE1E381C3C7BDF0E3CF79EF3C0FFC4E3CF03FC1C703BFF0F09C1E7FBC72703C00F0FF00101F0466J07F878001I0C60I8CK06020780F0FF0E01FC0E3E6271F1F7FBCF1FC,L01C0F188C618C3I260018C02331A60463071863118638C330C1C030C231C1846318C2318630C6180619E318602604630718611BC6234C182F18460199110010038386J02308C001I0840870CK060208C118463100C6119CAF18C060C98631,L01C02088C618432206I08400331860823861862198610C618E18030C419C388231842198630C61802184118600604338718621986230C08020886030D1I01001C006K03186001I0840801CK06021862084621804221880208C040C18631,M0C020C1C618430206I08C00203860FF38A1863F98610C608E28030C419618FF31847F98631C6180218419860060FF2831863F982070C0C420CFE03041003FF80C006K0310603FF81040801CK0602106200463F80462009020CC040C18631,L016020C6C7F84F0207C00F800C0D860802821FE601FE1FC60CA08030CC19658803184401FE32C6580218419960060802CB186201831B0C04420C8003061I01I04006K03102001J040801CK0602102200466I07C600F020CF840C1960F,L027020IC6185302066008C00311860802C21866018610C60CB08030CC192588031846018634C6980218419A60060C024318620182330C06820C8003061I01I04006K03102001002041800CK0602102200466I0466009020CCE40C1A609,L043020D8C6186302063008600331860C02521862018610C608948030CC19318C031846018630C7180218419C60060C027318630182630C02820CC003041I01I04003J023182001004061800CK0602182300462I0432009820CC640C1C619,L08182098C6184302063008600331860E02621863098610C608988030C619198E031843098630C61802184118600606127318638986630C030208E203041I01I08003K03186001008221I06K0602186380463080433008C208C640C18611,K0181C3198C618E303066018C00I38607E2271863F18630C31089C030C33I187E31843F18630C61806186318600607E2231861F9C4630C0103187E018818001011I01CI0430C400101FC33I03043006030C41FA063F00C63F9CC318CE60C18633,K07C3F2E0E6F3DF78F8FC03F801E1D8F83C72FBCF0E3CF7DE1E1CBE079E1C393C3C7FFC1E3CF79EF3C0FBC5C3CF00F83C727BCF0E1B8399F0102E03800F07CJ01EJ07C00FF878J03FC1CJ0F0301F8F8780F39F0E01FC0E3E72E1F9F1F3CFE7C,O02iI03U04X018L0202gJ0808hH02,O02iI01U04X018L0202iO02,O07iY0EX018K03C07iO07,O0F8iW01FX03EK0180F8iN0F8,,::::::kI0ES071C01E4,kH01F8Q01823061C,k020218O08030210C04,k02I08O08060211804,gU01F78B81E3CF79EFF7C00FFC5C7DE03FC38E077FE1E1383C7FF8E2E03800E1FE002I0803FC3CI080402318I07F01F1FE7F1DFF8F02E038F3DE7878E0701F8FBC7F878,gV0623CC6318630C983I0619E630C0064C470630C2378C460CB04F308C03193I02I08011866I080DC1C3J03180611CA608C2198F308C618C308C70600CC6182308C,gV0601866318630C183I0618C310C00608670E10C41104420C1846188602183I02001I018C3I080C6003J0318061080210C230C61886618C310670E00C62180310C,gV0381820718631C183I0618C110C0060FE58610C7F906060C188609FE060C3007FF01I018C101FFC83003J0330020090310C2304609FE618C310658600CC218031FC,gV0181821B1FE32C183F00618C113C00618059610C40106320C0C8609I060C3I02002I018C18008083003J03F00320F0300C2306609007F8FF30659600F8278231,gV01C1822318634C183180618C114C00618049610C40106620C0C060980060C3I02004I018C18008083003J03180120901A0C230660980618C330649600CC298231,gV0241826318630C183180618C118C0060804C610C60106C20C07060980060C3I0200800118C1I080830018I031801C0981A0C230460980618C33064C600C63180318,gV0461866318630C183180618C310C0060C246610C70104C20C070618C203083I0201040018C1I080C3I0CI031800C08C0C0C2304618C2618C318646600C6218431C4,gV0C31C46718630C183180618E238C0060FC44630C3F18C460C020710FC03183I0203FC021862I08066I0E08031800C1CC0C0C6188710FC618C30CC44600C6718430FC4,gU01E79B83B3CF79E3E7F00F3CDC7DE00F838E4F7DE1E170731F0206E07800E07CJ07F807FC3CK03CI03E007FI083E7001EF8F06E078F3DE7870E4F01F8FBDFF8704,gX018X0CX01O06X0404gG08J08L06gG01808,gX018X0CX01M0406hG01K08L06gG01,gX018X0CX038K03806hG0FJ0FM06,gX03CW01EX07CK0300FhG0EJ0EM0F,,::::::L0F8o07FF7FC03FFC0F2,K0306o04611860218430E,K0602oG06018302180602,K06oI06018300180C02,K0CI0F07F8705C33CC3C79EFBC3C03F84E0787FBDF7C7FE700FF3FC7F00E0FF1E05C0F0FE3E07F03F81C7BEF0F038FF7F00F3C3C03FF1703C7E1E1FFBDE1E071FE07DE1E0DC703800F1C38FF0F1E7878FE1FE1E3DF79EF8FFCE03FI06018300180C,K0C0011822189E661864630C61846018DE308C2218E3018C60046118C6031044331E619863180C6018C6230C6118CC98318061846018679846330C0C718C6318930038C231C6383I06084698318C308C6308C2318E30C60318C01980060183001818,K0C0030C2210CC309904630C21882018C4110C221843010640046018C6001844618C330C63180C6018C4330862188418318061882018630C82318C0C218C6310C30010C618C3387I03088618318C31062100C4118430C6020C8018C0060187001818,K0C0020C221FCC101800E30C218FF0198419FC22184301078004601866003044608C13046618066018C7F30863F980183180618FF0186304FF330C0C218C071FC30010C418C32C3I03108018038C31062300C7F98430C6020F0019800601FC001818,K0C0020402300C107E0363FC2788001F8419I021FC3E103I0460183E00600460CC13067E1F03E01F8C0308620180183F007F8800186304803E0F8C218C1B3003001FC408C32CBI019180180D8FF3063E00C401FC3FC7C206001FI06018I01818,K0C0020402300C10DB06630C29880018C419I02184339038I060183600300460CC13066319C36018CC030862018018318061880018630480330IC218C2330030010C408C324BI01818018118C33062300C4018430C6720700198006018I01818,K0C0030442100C10990C630C318C0018C419804218431904CI0601866001884608C13046318C66018440308630180183080618C00186304C0318C6C218C6310030010C608C3263J0E08018318C33062180C6018430C632098018C006018I0180C,K060030C42184C31998C630C218E0018C411C442184319004008601846001884608C33046318C460186613086388C01830C0618E0018630CE0318C6C218C6318430010C618C2233J0E0C018318C31862180C7018430C632008018C006018I01806,K03041I821F8E21188C630C7187E018C630FC8218C3398860106518C6001904310E21886318CC6018C7E30861F8FC1831806187E01863887E318IC618C671F830030C310C6223180040FE18338C30CC6328C3F18C30C67310C018C006018I0180704,L0F00F1FF870DC73CE7379EFBC3C03F85C071FFBDF7E7DCF83FF63F9F00F3FF1E0DC0F0FE3F19F03F81C7FFE0E0783E7F00F3C3C03CF3703C7E1F9JFE3B0707C07DE1E0DC727980040383E1D9E7870FE31E1E3DF79EFCFB9F03F001F87EI07E01F,P0101800CY04I01018O0203N0203I0Cg01g03gN0C,S0800CY04L08O0201P01I0ChG03gN0CN08,V0CY0EgS0ChG03gN0CM07,U01EX01FgR01EhG078gL03EM06,,:::::kL01,gY01C07804010E01C02008hM03Eg0FFE07800F07FF80380607F83008I0E01C0301E,gY0320FC1C013F0220E038hM07Cg03021860306430808C1E07F0F038001F8220F03F,gY06110E04002384302008hM08gG0300203060243J0606081030080021843030438,gY0418060402018C102008iO03006018CI03J040600103008J08C1030018,gY0418060402008C102008I0FBC00E0781E1FEFC0F1FE1C7FBF9E3871FE07F89C0F1780E1FC1E3CF79E3FB81C0300E018CI03J0406J03008J08C1030018,gY04180404I018C182008I061803308C23I26611AI234C18CCI183204C3C61188C318C62318630C6318380300C018CI03J080600203008J08C183001,gY0C18040404010C182008I021802110661A206320A20430C0846110C3I0C08221986218422318630C631C380300C01DCI03I03C0600203008I010C183001,gY0C18080404010C182008I021806010641820663FC20400C08C623FC3I0C0833F98260C460718630C3314180300C01DCI03J0E0600403008I010C183002,gY0C181004I020C102008I0278060306408207C20020C00C0F8322003I0C0832010360C7C1B1FE32C1F16580300C019CI03J0606004030081F020C103004,gY0418I0408040C102008I0298060306408206620020C00C08C303003I0C0832018360C463318634C1B12180300E018CI03J0206004030081F040C103,gY0418I0408080C102008I0318060306608206330020400C0861C3003I0C0833018260C436318638C33139803006018CI03J020600803008I080C103,gY06104004001044302008I0218030186618206338020600C0861C1843I0C08238982308436318630C231398030030306I03J06060080300800104430301,gY0220FE04103F8220200818071803F0CC31030631F8307F0C18C081F83I0C0C61F8C4318C66318630C63I180300186030403I0840600803008003FC220303F8C,gY01C1FE1F107F81C0F83E180FBC01E0701E0F8FC0F0F81C1F3F8080F07C01F0B80E0780E1FC39BCF79ECFB93C0FC007800F00FC00F00F81007C3E007F81C0F87F8C,k08,jO01P08,jO0EO01C,jO0CO03E,,:::::hP06L03X04,007C7EgO0FFE0380FF801FFEEL07Q01F8I01CI01FgN03E1CgK03FET03FgK07CV042,001818gO08420C4030C010C26L03R06K0CI060CgM01824gL0C38S07EgJ0183V066,001018gP0400C40306010C06L03J04M0600200CI0C04gN08gN0C18S0CgK0301V03C,001038gP0400C40306I0C06L03J0CM0600600CI0CgP084gM0C0CgY03,00105838FF1E3FC3C3F1F79FE1C3FDF03I0400C80306I0C06E0783C31C61F0F04E00600F8EC0018001E03C3FDEFBCF0E3CF7DE1E03C00840783703C3FE1C7F038FF7F03800C181E1FEF3DE31E138170F7DFE3C7DE7BEF7C0F3C06I038FE070DC79E1E1E78,001018C4612326046198C3I246118E03I0400E3C31CI0C06308CC431088C119E300600619C00180023046110C71863118638C23046008808C7184600C62318CC98318C600C182308C618C7231C6798638324638C31C638061806I08C63119C630C230C3,0010180661618608318C43220431184K0400E183FJ0C06310CC632080C20C4300600610C00180061886110C21862198610C6188600F018630CC30084331884183188600FF04108C618C04198630C610304210C308610061806I0866310CC330C618C3,00I180C60418608319843020FF1184K040371033J0C0631FC0E3C0C0C20C4300600630C001800418FE110C61863F98610C418FE009810630C830087F31980183198300C387F88C618C841983304630300610C318630061806001FE663FCC330C418C7,001218186040861831F04F020801187CJ0406320338I0C063100363C0F0C60C4300600630C00180040880010CA1FE601FE1FC4088I08810230C81008C03F180183F18300C0C4008C658F0C198330465030321FC328650065806001007E200C33FC408CB,0010180C60408618319853020C011846J04041C0318I0C0631004636038C60C4300600630C00180040880010F21866018610C4088I08C10230C81008C031980183198300C0C4008C698D8C1983304790306210C3C87900698060018063300C330C408D3,0018180660608618318C63020C011843J040C1C030CI0C063180C63200CC60C4300602630C001800608C0210C21862018610C608CI08618230CC10084030980183098300C0C6008C718IC198330461030C210C3086100718060018063300C330C608C3,001818066061860C318C430206I1843J040E1E230EI0C0631C4863300CC30C4300600630CI0C00618E2210C21863098610C618E20083186308C30086130CC01830CC200C0C7008C618CC6188230C61030C210C308610061803I0C263184C230C618C3,0018180660310606618CE30307E518C63I0C0627C307I0C0630FCCE31I84198E300604618E6006083107E410C71863F18630C3107E01838C43186241C7E318FC18318C600C183F40C618C6330C6388638304630C31C638061801820FC631F8C630C310C3,007C7E3CF01E0F8383F1F78F83C67DFC3001F03C38FC3C03F0F7C7066F9C7060E1F781FFC30EC6001E01E038FFDEFBCF0E3CF7DE1E03803E1C783703C63E1C7F0783E7F03803FF01E73EF3DE39C078370F7C7C737DE7BEF7C0F3C0078078FE0F0DC79E1E1E78,jN080CgK03hG03gT0C,jP04gK03hG03gT0C,kV03hG03gT0C,kV0F8h078gR03E,,:::::gP02gT08R018X01Q0CI01002,007C7EgG0FFEEK07FCV03C00FJ038N01FF018N01E07CK07I0FC3EI01CI07002K01F1F81F001I0301F87FFE,001818gG08622K0187W0E00CJ018O0618Q0601L01I03818J0CI03O0406060C03I03007030C1C,001018gH0602K01818V0E01CJ018O060CQ0301K021I0181K0CI03O04060CI03I07003020C0E,001038gH0602K01818V0B00CJ018O060CQ0381K061J0C2K0CI03O040618I05I0B001840C07,0010582E1FE1E3CF3FCF7DEF8I06027038018184879E71C786FE380B02C1E0C19C1E1B8E0060C18DC0F06EI0C107836F93800C20F06CC71C3382131E0040618I09I03001840C03,001018F308C63186118638C7J060318C401831EC8CC3088CE4CI0902C23I1C46238C30063839C6118E3I0E10CC72618C0064198E4C422388E7923004061800110013I0C80C03,0010186180C63186018610C2J0602188601FE0C10C43010460C200984C2310186631843007E018C330C63I07118630610C007030C60C82030C61841007FE381F110023I0E00C03,00I186080C07186018630C6J060218FE01830C1FC6311FE604200984C07181860718430066018C320C63I03118330610C003830660F03030C6107F80406380621I03I0700C03,0012186080C1B1FE018650CAJ0602198001818C1002381006064008C8C1B1E1861B18430067018C320463I01918330610C001030660F03C30C6104I04063806410043I0200C03,0010186080C23186018790F2J060219800181CC1002581006024008C8C23071862318430063018C320463J0D18330610C001030660D80E30C6104I040618067FC0FFC00200C03,0018186080C63186118610C2J060218800181CC18034A180603800870C63019866318430061818C330463J0718230610C001030460C80330C6106I04061C0601I03I0200C06,0018186180C63186018610C2J060218C201818C1C418E1C0601800870C63019864318430061C18C330C63J0718230610C001030460CC0130C6107I04060C0601I03I0200C0E,0018187128C67186218638C7180060718FC01838C0FC1840FC601800820C67I1866718E30060E18C618863004030C430638C001818860C62330C6303F00406070601I03I0300C1C1,007C7E6E31E3B3CF7FCF7DEF9801F8FBC3807FE1F070104078F01003E23F3B8E3EFI3DF781F87BCDC0F0F7C0F010787837DE007C0F0F3E70E7DEF7C1E01F1F81F001I03I0F83FE01,L06O0404gS01gM0C,L06X08gL02gM0C,L06hJ01EgM0C,L0FhJ01CgL03E,,::::::007C7EgH07C00F801FK07FFS0108N0201C0FE0E01F02M01E0078hN084U03FF8T042,001818gG01830306060CJ0181S0118N0E07E1FE1103E0EN06006hO0C4U02308T062,001018gG030186030C06J018U0EO02047100308I02N0700EhO078V03V03C,001038gG030186030C06J018gK020030042086002N07006iM03,001058E077FE1E0DC7F8705C180600CC019803I011802E1EFBDF3FC787BEFF42J0200100460CF802I03FC0058160F01C7CDFC1EI0707FC7FBDF79EFBDF7FE3C3FEF87DEF87BEF00387CC4E78EFE00307F03C27038F38F1F780FE3DF03FC3C2700FF,00101870630C231C60C989E6180600CC0198030021180F30C718E118CC31D112K02003I060C1C02J0C400580611823394C623I0307184718C30C618E30C4600C6038C70318600C6395E33046I03031846F18CC63918C3006318E026046F18061,00101870E30C618C30C10CC3I0600CC0198030042180618C2184118843091031J0200200860C0602J0CI04C2620C431004223I0386184218430C218430C420086010C2030860086100C318461003010886618846420C430063184006086618061,00I1858630C418C30C1FCC1I0600CC01980300C6180608C61841180C31810108I0200200860C0202J0CI04C0620C401204607I038A080218430C218C30C060086010C2030860183120C11886I030118FE609806420C4300661840060FE60806,00121859630C408C30C300C1I0600CC019803008C180608CA1FC118263281018CI02004I060C0302J0CI0464660CC01E07C1BI02820C83F84F0C219430C320087C1FC3E309E01831E0C18C86I0301F08060D807860C4F007E1FC00608060C06,00101849630C408C30C300C1I0600CC019803008C180608F2184118C63C81018CI0200801060C0202J0CI0464660CC01204633I02C2048218530C21E430C620086710C2330A60183120C10C06I03011880609806C60C53006318400608060806,0018184C630C608C30C100C1I030186030C0600C6180608C21841188630810108I020100102080202J0CI0438660C401304363I0252070218630C218430CC20086310C2130C60183130C10706I03010CC0609806460C6300631840060C060806,00181846630C618C20C184C3I030186030C060042180618C2184118863081031J020208003180202J0CI0438630C601184363I0262030218430C218430CC20086310C21308600C2118C30706I03010CE2618C06630C4300631840060E261806,00181844630C310C60C1F8E21801830306060C0021180710C718C518CE31C18200C00207F02011084020600C20041061987F398C663180227030618E30C218E30C4641C6330C6331C600C6398E20206I0303187E710FC63198E3006318C30607E710C618C,007C7EE4F79E1E0DC1F070DC18007C00F801FJ017E06E1EFBDF67C667BE7C420C00F8FF0200E0F00F8603E201F01F8E01C7CFFC3998072F820FBDF79FF3DF79E7363EFC7DEFE7BEF00387CEDC020FI0FC7F0386E078F38E1F780FE3DF30F8386E0CF18E,U0CL0CgH06iN02N018gN0CU06gJ06L02,U0CL0CgH06iN04O08gN0C004R06gJ06,U0CL0CgH06iM03CgX0C038R06gJ06,T03EK01EgH0FiM038gW01F03S0F8gI0F8,,:::::jI01,007C7ES084003ES0601CS01FgG01K01C,001818S08C00FCR01E062S01FgG07J0202,001018S070018T06043S02gH01J0203,001018V01U060C1S03gH01L03,001018FE071FEF3C3C3DF0078004EI03FCI060C18001E3FC5CI07CI07FE1E381C3C7BDFI0101E0402,00101863118326184618E028C01E3I0118I060C180023065E6J0EI030C231C1846318CI010330404,0010186310C306188318403060041I0118I060C180061060C3J03I030C419C38823184I01021001E,001018633FC306188318C03060041800118I06063I040060C1J03I030C419618FF3184I010030807,0010187E200307F98319403067C41800118I06039I040060C1J01I030CC19658803184I010098803,0010186330030619831E403067C418I018I06003I060060C1J01I030CC19258803184I010318001,001018613003061983184010600418I018I06002I060060C1J01I030CC19318C03184I010219001,0010186198430618C318401840041I0218I06004I070060C3N030C619198E03184I010219001,001018631F8306186618E00CC0063180418C0060181803F060E21004218030C33I187E31842001033A0620C,007FF8FE0F07CF3C383DF007I05C180FFCC00F8E01801E0F8DC100781C079E1C393C3C7FFC2007C19A0780C,K0EgG04J080CU0CM04U03,K02gG040080804U0CgI01,K02gG0EgH0C,gL01FgG01E,,::::::S01kO0100FR03F,S03kO070108Q07E,S038kN01030CQ0C,S058kN01030C,S04C0FFBCC387F8F0FFBC00FFC4E078FF7DEFE0787FE3C3C63C1C1E1EF80FF071FE3F70380F7C0FFC3C3FC4E0700E3FDF31E3C1E03FC3C001030803FC3C7F801380E0B80E381C38F3DF79E1F70781E781F31E0DC7038FEF7BEF7DC0E,T0C003194C630918031800619E308C9830C6308C3086618E4662330C70046118326638300638061846119E318C33260E5230C180118460010190011846I801C6313CC231838C4618E30C0C30700C300E5231C63071886318638C1C,S08C0021908630A0C021800218411061810C21106308C31804603210C2I0610C30C6387006100618830184110C2106040210C380018C300100E0011882880018621986219C3886618430C0C38600C30040618C33871886308610E1C,S0860021A1833020C021800218419061810C23106308C11900E06030C2I063FC30662C30063006188301841B06600604803063800188300100F00118FF08001833F9827F9418FE618430C0C38A00C70048418C32831886308630A0C,R01FE0021E1833060C021F0021841B061813C3E306308C19E0360C098FEI06200303E2CB0065006198301841B0660060781902180118810010118011880080018360182401659807F87F0F8C28200CB0078408C32CB0786308650B2C,R01020021B1833060C02198021841B061814C23306308C19B06606318C2I06300303624B0079006198301841B066006048310358011881001030C01188008001836018260121980618430IC2C200D30048408C3243048630879090C,R02030021B1833060C0218C021841B061818C21B06308C1198C603218C2004630030262630061006198311841B06600604C6103180018C100103040118C008001832018260139880618430C6C25200C3004C608C32730C863086109CC,R0203002198C23030C0218C0218411861810C21986308C1198C603218C2I061843066233006100618C30184118430060466101980218C300103040118E008I08230986309398C2618430C6C26200C30046618C227308863086109CC,R0601907198C630199071980618630CC1838C630CC3186218CC60I38C600861F830C6223006380618662186318C3F060E6231198021862001018805187E0C600C63F1C43FI18FC618C30IC22700C300E6310C6223198630863I8C,R0F07F8FBCE38780E18FBF00FBC5C0703E7DEFE0707BE3C3C7731E199EF81FF0F07DCF72780F7C0F3C387FC5C0701E0F9F3B9BC3E0FFC3C007C0F0067C3C3E600780E1B81E393C38F3DF79F9F72F81E781F39E0DC727F3EIF8F7DC9E,gW04gR0101gG04044X0C04gJ018gR0CP06,gW04hY04X08gL018gR0CP02,gW0EhY0EhK018gR0C,gV01FhX01FhK03CgQ03E,,:::::hT04,hS0F8hS042X084,hR01FhT062X0CC,hR02hU03CX078,,0019E60E3CF7BFF79EF3C787078007F9EFBDF1E381C01E0170785E03C3FC1C7F0F0F7DE78FDE0F7BE079E1E7DE7F9B83C1FEF83DF0E1F780F7C382E3F8FBC3C3CF0071F7878FF0E381DF0FI0FFC387BC3C798007FE1E7BC3C7BEF3C0F3C03FC5C78FFEF3DE7,0030C323186318630C618CC307I0230C718C231C1802301188C230461184631998638C319860C31C030C2338C88B8C6608C6018E318C300638C4F318C71846186008CC308C19311C18E06I0618C6318463280030C233184631C61806180119E630462618E2,I04C821986318430C61884386J030C2184231C38041I0884618830184331908610C319861C308030C4310C881864208C6018421843006108661884218C3186010C4318418219C38406I0618863188232I030C433188230861806180018C31006061864,J0C07F986318430C6180C38AJ030C618407161804I0180C60883018FF33018610C719831C318030C7F10C081860608C6018460C4300610FE6088C2188318E010043100183F9618406I061983318FF34I030C7F318FF30863806180018C11886061838,I03F0401FE318432C7F826282J030CA1841B165804I0706440D83018803F04C7F0CB07810C328030C401FC081861308C7E1FC60C4F007F180608F83F88119603004F100186016587C6I061983318803CI030C40318803F865806580118C10886065818,I06D860186318434C618C62C2J030F218433125804I018C460D83018C03198C610D30D81AC3C8030C4010C081866308C6318460C5300611806088C218811A603005318018601258466I0619833D88036I030C403D88030869806980118C10D06069818,I04C860186318438C61886252J030C218463131806J0D8460983018C03190C610C309818C308030C6010C081864308C6318460C63006108060886218C118601006318018201318426I061983018C036I030C60018C030861807180018C1050607182C,I0IC30986318430C61886262J030C218463119807J0D84608C3018613190C610C31980CC308030C7110C081844308C631843084300610C261886218C31860180431C018309198426I0618C2018E033I030C71018E030861806180218C30606061846,I08C43F186318430C618CE227300A30C718463I1803F00188C310665187E3199C630C31188CC31C030C3F30C0C18C6768C6318C318E300630FC7118C6186218601FCE30FC183FI18C66300618C60187E3318030C3F0187E31861806180218E20206061883,0039E71E3CF7FFE79EF3C6672FB80C79EFBFE39B93C01E00F0E61E03863C3C7F0CCF7DE7F3DE1F7BE07FC1C7DE3E1B8J3EFE3DF0E1F780F7C386E3F8FBC3C3CF0071F78783E0E393DFCF380F3C3803C3C79DC079E1C03C3C7BEF3C0F3C0FFCDC021F0F3DC78,T03R08N03hM02M018gI06gS08T04gH0C04C004,T01gG01hU018gI06iQ0800C004,jR018gI06iT0C078,jR07CgI0FiS01E03,,::::::::::j0F06E3FC78F3C3C3F007FEF3DEFBC3CFE0F05C071E7BCF1FC,iY0198E31848C61846198030C618C3184663119E6118C318631,iY030C618808C618C318C030C618C218862I18C310CC318631,iY0304618801C61883198030C638C218FE23038C13FCC318E31,iY0306618806C7F8811F0030C658C218803E0D8C1200FF1960F,iY030661880CC61881198030C698C2188023198C1300C31A609,iY0304618818C618C118C030C618C218C021B18C1300C318619,iY0304610818C618C318C030C618C218E221B18C3184C318611,iY0188631818C6186218C030C618C2187E63318E21F8C318633,j0F06E3E0E6F3C3C3F0079EF3DIF838FE1CCDC0F1E7BCF67C,jH06gJ04M0C,jH06gR0C,:jG01FgQ01E,,::::::00FE7EhH078hU0FFC,003C38hG01FhV070F,003838hG02hW0307,003838jY0307,003838F701C3C783C38770FBE1C038078EFFC3C3FEF701C0E07F838FBCFBC1C00781FE78E1E1FE1C0FF1FE03F87B80E1FE7BEFFC0307070FBEF071E0F78E07C3FC383B80E1FE1E03C38,00383871836073C386639C71C330CC03846386606271866518070CC71C71C36019C01C386330E26600E38C01CE38C1B01C79C8C4030E11871C6198F1E384046038661CE198E70C018E6,003C3871C63073C38E630C71C638CC0380638E306071C66718070CC71873863019C01C382718E06300E38C01C638E3181C31C0C003FC39C71C6198F0E38I06038C718631CE30C018C6,001C7871C63062E38C630C71C639C60180638E306071CE371C071C671873863019C01C380718E0E300E38C01CC38E3181C33C0C0030F19C71C638CB0E18I06038C718631CE70C019C7,I0F3871CFF0C2E38FE30C7FC639FE01C0638E306071CFF71C071FE7F8778FF003C01C3E0718E0E380E38C01F838E7F81C33C0C0030783C71C63FCB8E1C0018038C718631CFE0FC1FC7,J03871CE0072738E030C71C639CI0C0638E306071CE071C071C0718798EI0DC01C3B8718E0E380E1FC01CE38E7001C3DC0C003038DC71C6380BCE0CI0E038C718631CE30C719C7,J03871C60032738E030C71C639CI0E0638E306071CE071C071C07187986001DC01C3B8718E0E300E0CC01C738E3011C39C0C0030399C71C63809CE0EI07238C718631CE38C719C7,J03871C70032738E030C71C638CI060638E306071C60319070C071871870019C41C39C718E06320E1CC01C738E3801C39C0C00307B9C71C618098E06I07038C718631CE38C718C63,J038798700722387039C71C330EI0607386607079870319870E071C71C70018C61C38E330E06630E19C01CE3CC3821C39C1C0078F39C&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnExample">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Скопировать образец кода</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <layout class="QHBoxLayout" name="butonBox" stretch="1,2,2,2">
+     <item>
+      <widget class="QPushButton" name="btnDefault">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>По умолчанию</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Печать</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
