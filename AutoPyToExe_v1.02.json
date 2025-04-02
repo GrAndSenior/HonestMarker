@@ -1,0 +1,109 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Grand/Py/HonestMarker/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Grand/Py/DataMatrix/i.ico"
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "d:\\Grand\\Py\\HonestMarker\\sources;sources/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Grand/Py/HonestMarker/options.ini;."
+  },
+  {
+   "optionDest": "pathex",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/treepoem/postscriptbarcode"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/pylibdmtx;pylibdmtx/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/zebrafy;zebrafy/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/treepoem;treepoem/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/pypdfium2;pypdfium2/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/1a-a.grushovets/AppData/Local/Programs/Python/Python311/Lib/site-packages/pypdfium2_raw;pypdfium2_raw/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
